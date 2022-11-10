@@ -7,28 +7,32 @@
     <title>Tyler's Portfolio</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="./styles.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--JavaScript-->
+    <script defer src="./index.js"></script>
+    <!--FontAwesome-->
+    <script defer src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="d-flex flex-wrap justify-content-center py-3 my-nav-class">
-        <ul class="nav nav-pills">
+    <nav class="d-flex flex-wrap justify-content-center py-3 my-nav-bar">
+        <ul class="nav nav-pills my-nav-list">
             <li class="nav-item">
-                <a class="nav-link" href="#">Introduction</a>
+                <a class="nav-link" href="#intro">Introduction</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="#resume">Resume</a>
             </li>
         </ul>
     </nav>
@@ -36,11 +40,24 @@
     <section id="intro">
         <h1>I'm Tyler,</h1>
         <h2>an aspiring web developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>I've decided to perform a career change and move into web development so that I could have better job opportunities
+            and possess a verifiable skill set. My journey started with learning Python because it was the language that everyone 
+            recommended learning first. I believe I took to it quite well, I enjoyed the syntax and the way it was structured. 
+            Once I was competent in Python I struggled with what path to take next, most of the jobs involving python seemed 
+            to be centered around data analysis which I had no interest in. This eventually lead me to web development where 
+            I reprioritized my learning into HTML, CSS, and JavaScript. There was a small learning curve transitioning from 
+            Python to JavaScript but overall it felt pretty familiar. Currently, I'm working on honing my front-end skills and 
+            will learn back-end at a later time with the eventual goal being full stack development.
         </p>
+        <p>
+            I typically learn things at an accelerated rate and tend to retain more than my peers which I believe is an 
+            invaluable skill to have in the tech industry. With my governmental / investigatory job experience, you can rest assured 
+            that I will bring the utmost level of professionalism to any position. I have leadership experience in a few different 
+            roles so I know how to work with others. I've corresponded with federal, local, and tribal governments so I'm well 
+            spoken/written. I've worked enforcement positions so I know how to operate in high stress situations. Overall, I think 
+            I would be a valuable asset to any team and look forward to growing with your company.
+        </p>
+        <h3>Thank you</h3>
     </section>
 
     <section id="skills">
@@ -67,21 +84,21 @@
                 <div class="carousel-item active">
                     <img src="./images/heather-website.jpg" class="d-block w-100 my-carousel-image" alt="screenshot of recipe website">
                     <div class="carousel-caption d-none d-md-block">
-                        <a href="https://arkaes13.github.io/heather-website/index.html">Live Demo</a><a href="https://github.com/ArKaes13/heather-website">Repo</a>
+                        <a href="https://arkaes13.github.io/heather-website/index.html">Live Demo</a><a href="https://github.com/ArKaes13/heather-website">GitHub</a>
                         <p>A recipe website I made for my girlfriend so that she could have a convenient place to store/access her recipes.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="#" class="d-block w-100 my-carousel-image" alt="#">
                     <div class="carousel-caption d-none d-md-block">
-                        <a href="#">Live Demo</a><a href="#">Repo</a>
+                        <a href="#">Live Demo</a><a href="#">GitHub</a>
                         <p>Placeholder</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="#" class="d-block w-100 my-carousel-image" alt="#">
                     <div class="carousel-caption d-none d-md-block">
-                        <a href="#">Live Demo</a><a href="#">Repo</a>
+                        <a href="#">Live Demo</a><a href="#">GitHub</a>
                         <p>Placeholder</p>
                     </div>
                 </div>
@@ -98,7 +115,177 @@
     </section>
 
     <section id="resume">
-
+        <h1>Work Experience</h1>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/sanDiegoCounty.png">
+                <p>Oct 2021 - May 2022</p>
+                <p>Full-Time | Temp</p>
+            </div>
+            <div class="job-description-container">
+                <h2>County of San Diego Health & Human Services Agency</h2>
+                <h3><em>Lead Case Investigator</em></h3>
+                <ul>
+                    <li>Supervised a team of 30 Case Investigators and approved their time cards.</li>
+                    <li>Conducted routine quality assurance checks on Case Investigators and advised them on what they could improve upon.</li>
+                    <li>Filed Privacy Incident Reports when investigators sent information to the wrong contact or failed to encrypt their emails.</li>
+                    <li>Communicated with the CDC to place cases on a Do Not Board list if they had travel plans while communicable.</li>
+                    <li>Monitored caseloads for investigators to make sure they were not getting overwhelmed and reduced intake as needed.</li>
+                    <li>Referred poor performers to 1 on 1 training and processed their removal if performance did not improve.</li>
+                    <li>Received priority cases from senior staff that were deemed too high-profile for regular investigators.</li>
+                    <li>Conducted all previous Case Investigator tasks as well.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/sanDiegoCounty.png">
+                <p>Dec 2020 - Oct 2021</p>
+                <p>Full-Time | Temp</p>
+            </div>
+            <div class="job-description-container">
+                <h2>County of San Diego Health & Human Services Agency</h2>
+                <h3><em>Case Investigator</em></h3>
+                <ul>
+                    <li>Confirmed/processed lab reports, medical records, death certificates and conducted investigations into positive COVID-19 cases.</li>
+                    <li>Made referrals to local, tribal, state, and federal agencies for high-profile cases.</li>
+                    <li>Interviewed cases and extracted information regarding close contacts/whereabouts during communicable and exposure period.</li>
+                    <li>Consolidated close contacts onto a spreadsheet and forwarded the information to the Contact Tracer Team.</li>
+                    <li>Provided educational material to cases and referred/approved them to appropriate government programs. </li>
+                    <li>Maintained strict confidentiality in accordance with HIPAA.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/sanDiegoCounty.png">
+                <p>Sep 2020 - Nov 2020</p>
+                <p>Full-Time | Temp</p>
+            </div>
+            <div class="job-description-container">
+                <h2>County of San Diego Registrar of Voters</h2>
+                <h3><em>Site Manager</em></h3>
+                <ul>
+                    <li>Learned election procedures and presented them to a class of 30 election workers.</li>
+                    <li>Managed a diverse team of 15 election workers at a polling location.</li>
+                    <li>Organized the set up/tear down of a polling location and ensured health and safety procedures were followed.</li>
+                    <li>Represented the County in a professional manner and appropriately addressed controversial questions from the public.</li>
+                    <li>Provided educational material to cases and referred/approved them to appropriate government programs. </li>
+                    <li>Maintained strict confidentiality in accordance with HIPAA.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/usCensusBureau.png">
+                <p>Aug 2020 - Sep 2020</p>
+                <p>Full-Time | Temp</p>
+            </div>
+            <div class="job-description-container">
+                <h2>United States Census Bureau</h2>
+                <h3><em>Enumerator</em></h3>
+                <ul>
+                    <li>Conducted field interviews and data capture despite reluctance from the general public.</li>
+                    <li>Represented the Federal Government in a professional manner while being faced with adverse social and environmental factors.</li>
+                    <li>Quickly learned and applied complex government procedures and regulations.</li>
+                    <li>Was offered several other duty locations, including interstate travel, due to my performance.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/sanPasqual.jpg">
+                <p>Jul 2018 - Aug 2019</p>
+                <p>Full-Time | Perm</p>
+            </div>
+            <div class="job-description-container">
+                <h2>San Pasqual Band of Mission Indians</h2>
+                <h3><em>Tribal Gaming Agent</em></h3>
+                <ul>
+                    <li>Conducted investigations into customers/employees that resulted in their arrest/termination. Investigations consisted of primarily financial crimes with a wide variety of additional crimes.</li>
+                    <li>Monitored closed-circuit television(CCTV) coverage to ensure the integrity of gambling, banking, count room, and cash handling procedures/regulations.</li>
+                    <li>Wrote incident reports to document any suspicious activity(SARs), theft, procedural or regulatory violations and provided evidence to law enforcement as needed.</li>
+                    <li>Stayed up to date on Tribal, State, and Federal laws/regulations.</li>
+                    <li>Maintained strict confidentiality and professionalism at all times.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/valleyView.jpg">
+                <p>Jun 2017 - Jul 2018</p>
+                <p>Full-Time | Perm</p>
+            </div>
+            <div class="job-description-container">
+                <h2>Valley View Casino & Hotel</h2>
+                <h3><em>Security Officer / Dispatcher</em></h3>
+                <ul>
+                    <li>Monitored all traffic entering/exiting the casino and prohibited any alcohol, weapons, minors, excluded guests, or undesirables from entering/exiting.</li>
+                    <li>Worked alongside law enforcement in the apprehension of undesirables on VVCH property.</li>
+                    <li>Wrote reports on any and all incidents concerning VVCH.</li>
+                    <li>Checked for fraudulent identification/currency and submitted counterfeit currency to the United States Secret Service.</li>
+                    <li>Dispatched officers/handled their scheduling/trained new officers.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/gpc.png">
+                <p>Mar 2016 - Nov 2016</p>
+                <p>Full-Time | Temp</p>
+            </div>
+            <div class="job-description-container">
+                <h2>Genuine Parts Company</h2>
+                <h3><em>Renovator / District Coordinator</em></h3>
+                <ul>
+                    <li>Started as a Renovator and then took over responsibilities for the District Coordinator which handled scheduling, goals, and key decisions of our small team.</li>
+                    <li>Removed all merchandise and display units from the sales floor and installed new units with more efficient spacing.</li>
+                    <li>Stocked, inventoried, organized, and expanded the Distribution Center warehouse.</li>
+                    <li>Basic electrical and construction work.</li>
+                    <li>Transported materials and merchandise throughout southern California.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/powayValleyCollision.jpg">
+                <p>2010 - Mar 2016</p>
+                <p>On-Call | Perm</p>
+            </div>
+            <div class="job-description-container">
+                <h2>Poway Valley Collision</h2>
+                <h3><em>Auto Body Technician Apprentice</em></h3>
+                <ul>
+                    <li>Performed auto body and mechanical repair with integrity while under time constraints.</li>
+                    <li>Thoroughly examined vehicles for damage and returned the vehicles to factory specifications.</li>
+                    <li>Removed and replaced damaged parts using power and hands tools.</li>
+                    <li>Detailed vehicles and prepped them for paint.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="job-container">
+            <div class="job-type-container">
+                <img src="./images/wildlifeResearchInstitute.jpg">
+                <p>2007 - 2009</p>
+                <p>On-Call | Volunteer</p>
+            </div>
+            <div class="job-description-container">
+                <h2>Wildlife Research Institute</h2>
+                <h3><em>Biologist's Assistant</em></h3>
+                <ul>
+                    <li>Fed and cared for buffalo, pigeons, and mice.</li>
+                    <li>Performed general maintenance around the facility.</li>
+                    <li>Conducted pest control for ground squirrels and mice.</li>
+                    <li>Contracted for a falcon survey from the Bureau of Land Management.</li>
+                    <li>Placed temporary watering holes for displaced wildlife at the Salton Sea.</li>
+                    <li>Dug burrows for burrowing owls in the Ramona Grasslands.</li>
+                </ul>
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <p class="copyright"></p>
+    </footer>
 </body>
 </html>

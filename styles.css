@@ -9,10 +9,14 @@ body {
 
 /* Nav Bar */
 
-.my-nav-class {
+.my-nav-bar {
     background-color: #06283D;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: 'Caveat', sans-serif;
+}
+
+.my-nav-list {
+    gap: 3rem;
 }
 
 /* Intro Section */
@@ -36,14 +40,20 @@ body {
 #intro h2 {
     font-family: 'Dancing Script', sans-serif;
     font-size: 3rem;
-    margin-right: 30rem;
     margin: 0 30% 0 0;
 }
 
 #intro p {
     font-size: 1.6rem;
     line-height: 2;
-    padding: 3rem 20rem 3rem 20rem;
+    padding: 2rem 20rem 2rem 20rem;
+    margin: 0;
+}
+
+#intro h3 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3rem;
+    margin: 0 0 0 40%;
 }
 
 /* Skills Section */
@@ -88,7 +98,6 @@ body {
     font-family: 'Caveat', sans-serif;
     font-size: 4rem;
     text-align: center;
-    margin: 0 0 2rem;
 }
 
 .my-carousel-image {
@@ -113,4 +122,71 @@ body {
     font-size: 1.6rem;
     max-width: 50rem;
     margin: 0 auto;
+}
+
+/* Resume Section */
+
+#resume {
+    background-color: #DFF6FF;
+    color: #06283D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume h1 {
+    color: #06283D;
+    font-family: 'Caveat', sans-serif;
+    font-size: 4rem;
+    margin: 5rem 0 5rem;
+}
+
+.job-container {
+    display: flex;
+}
+
+.job-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    width: 19.4rem;
+}
+
+.job-type-container img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 180px;
+    object-fit: cover;
+    margin: .5rem 0 1.5rem;
+}
+
+.job-description-container h2, h3 {
+    font-size: 2.4rem;
+    margin: 0 0 0 2rem;
+}
+
+.job-description-container h3 {
+    margin: 0 0 2rem 2rem;
+    font-size: 2rem;
+}
+
+.job-description-container ul {
+    font-size: 1.6rem;
+    width: 80rem;
+    margin: 0 0 5rem;
+}
+
+footer {
+    display: flex;
+    background-color: #222831;
+    padding: 1.6rem;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #EEEEEE;
+}
+
+footer p {
+    margin: 0;
 }

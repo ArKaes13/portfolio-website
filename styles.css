@@ -76,6 +76,7 @@ body {
 #skills ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     margin: 0 0 5rem;
 }
@@ -125,6 +126,42 @@ body {
 }
 
 /* Resume Section */
+
+.align-left.slide-in {
+    transform: translateX(-50%) scale(.5);
+    opacity: 0;
+}
+
+.align-right.slide-in {
+    transform: translateX(50%) scale(.5);
+    opacity: 0;
+}
+
+.slide-in.active {
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+.slide-in.inactive {
+    animation: slideOut 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(50%) scale(.5);
+        opacity: 0;
+    }
+}
 
 #resume {
     background-color: #DFF6FF;
@@ -177,6 +214,8 @@ body {
     width: 80rem;
     margin: 0 0 5rem;
 }
+
+/* Footer */
 
 footer {
     display: flex;

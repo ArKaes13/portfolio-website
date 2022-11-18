@@ -79,6 +79,7 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 0 0 5rem;
+    padding: 0 1rem;
 }
 
 .skill-image {
@@ -269,10 +270,14 @@ footer p {
     }
 
     .my-nav-list {
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     /* Intro Section */
+    #intro {
+        padding: 5rem 2rem;
+    }
+
     #intro h1 {
         margin: 0;
     }
@@ -282,7 +287,7 @@ footer p {
     }
     
     #intro p {
-        padding: 0 1rem 0;
+        padding: 0;
         margin: 4rem 0 0 0;
     }
     
@@ -318,7 +323,7 @@ footer p {
     }
 
     .job-description-container {
-        width: 35rem;
+        width: 30rem;
     }
     
     .job-description-container h2 {
@@ -332,6 +337,6 @@ footer p {
     }
     
     .job-description-container ul {
-        width: 35rem;
+        width: 30rem;
     }
 }

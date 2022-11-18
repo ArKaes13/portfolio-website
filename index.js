@@ -27,12 +27,12 @@ const jobDivs = document.querySelectorAll('.slide-in');
 function checkSlide() {
     for (i = 0; i < skillImages.length; i++) {
         var slideInAt = (window.scrollY + window.innerHeight) - 
-            skillImages[i].height / 2;
+            skillImages[i].height / 3;
         var imageBottom = skillImages[i].offsetTop + skillImages[i].height;
-        var isHalfShown = slideInAt > skillImages[i].offsetTop;
+        var isThirdShown = slideInAt > skillImages[i].offsetTop;
         var isNotScrolledPast = window.scrollY < imageBottom;
 
-        if (isHalfShown && isNotScrolledPast) {
+        if (isThirdShown && isNotScrolledPast) {
             skillImages[i].style.animationDelay = `${.3 * i}s`;
             skillImages[i].classList.remove('inactive');
             skillImages[i].classList.add('active');
@@ -45,12 +45,12 @@ function checkSlide() {
     
     for (div of jobDivs) {
         var slideInAt = (window.scrollY + window.innerHeight) - 
-            div.clientHeight / 2;
+            div.clientHeight / 3;
         var imageBottom = div.offsetTop + div.clientHeight;
-        var isHalfShown = slideInAt > div.offsetTop;
+        var isThirdShown = slideInAt > div.offsetTop;
         var isNotScrolledPast = window.scrollY < imageBottom;
 
-        if (isHalfShown && isNotScrolledPast) {
+        if (isThirdShown && isNotScrolledPast) {
             div.classList.remove('inactive');
             div.classList.add('active');
         } else {

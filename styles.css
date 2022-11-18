@@ -68,7 +68,7 @@ body {
 }
 
 #skills h1 {
-    margin: 2rem 0 2rem 0;
+    margin: 5rem 0 5rem 0;
     font-family: 'Caveat', sans-serif;
     font-size: 4rem;
 }
@@ -122,7 +122,6 @@ body {
 
 #projects {
     background-color: #1363DF;
-    padding: 5rem 0 5rem;
 }
 
 #projects h1 {
@@ -130,6 +129,8 @@ body {
     font-family: 'Caveat', sans-serif;
     font-size: 4rem;
     text-align: center;
+    margin: 0;
+    transform: translateY(5rem);
 }
 
 .my-carousel-image {
@@ -159,12 +160,12 @@ body {
 /* Resume Section */
 
 .align-left.slide-in {
-    transform: translateX(-50%) scale(.5);
+    transform: translateX(-15%);
     opacity: 0;
 }
 
 .align-right.slide-in {
-    transform: translateX(50%) scale(.5);
+    transform: translateX(15%);
     opacity: 0;
 }
 
@@ -178,18 +179,18 @@ body {
 
 @keyframes slideIn {
     to {
-        transform: translateX(0%) scale(1);
+        transform: translateX(0%);
         opacity: 1;
     }
 }
 
 @keyframes slideOut {
     from {
-        transform: translateY(0%) scale(1);
+        transform: translateY(0%);
         opacity: 1;
     }
     to {
-        transform: translateY(50%) scale(.5);
+        transform: translateY(15%);
         opacity: 0;
     }
 }
@@ -217,7 +218,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2rem;
     font-size: 1.6rem;
     width: 19.4rem;
 }
@@ -230,7 +230,7 @@ body {
     margin: .5rem 0 1.5rem;
 }
 
-.job-description-container h2, h3 {
+.job-description-container h2 {
     font-size: 2.4rem;
     margin: 0 0 0 2rem;
 }
@@ -259,4 +259,79 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* For mobile */
+@media screen and (max-width: 1080px) {
+    /* Nav Bar */
+    .my-nav-bar {
+        font-size: 2rem;
+    }
+
+    .my-nav-list {
+        gap: 2rem;
+    }
+
+    /* Intro Section */
+    #intro h1 {
+        margin: 0;
+    }
+    
+    #intro h2 {
+        margin: 0;
+    }
+    
+    #intro p {
+        padding: 0 1rem 0;
+        margin: 4rem 0 0 0;
+    }
+    
+    #intro h3 {
+        margin: 3rem 0 0 0;
+    }
+
+    /* Project Section */
+    .carousel-item {
+        padding: 10rem 0 15rem;
+    }
+
+    /* Resume Section */
+    .align-left.slide-in {
+        transform: translateX(-8%);
+    }
+    
+    .align-right.slide-in {
+        transform: translateX(8%);
+    }
+
+    .job-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .job-type-container {
+        width: 30rem;
+    }
+    
+    .job-type-container img {
+        margin: 0;
+    }
+
+    .job-description-container {
+        width: 35rem;
+    }
+    
+    .job-description-container h2 {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .job-description-container h3 {
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+    
+    .job-description-container ul {
+        width: 35rem;
+    }
 }

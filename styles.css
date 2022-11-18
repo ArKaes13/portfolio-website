@@ -85,6 +85,37 @@ body {
     width: 10rem;
     height: 10rem;
     object-fit: cover;
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skill-image.active {
+    animation: fadeIn .8s ease-out forwards;
+}
+
+.skill-image.inactive {
+    animation: fadeOut .5s ease-in;
+}
+
+@keyframes fadeIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+        visibility: visible;
+    }
 }
 
 /* Project Section */
@@ -142,7 +173,7 @@ body {
 }
 
 .slide-in.inactive {
-    animation: slideOut 1.5s ease-out forwards;
+    animation: slideOut 1.5s ease-in forwards;
 }
 
 @keyframes slideIn {
